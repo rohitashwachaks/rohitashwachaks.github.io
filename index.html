@@ -1,7 +1,162 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rohitashwa Chakraborty | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <!-- Sticky Navigation -->
+  <header class="site-header">
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#blogs">Blogs</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#live-widgets">Live</a></li>
+        <li><a href="#instagram-feed">Instagram</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section with Parallax Background -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <img src="assets/profile-placeholder.jpg" alt="Profile Image" class="profile-img" />
+      <h1>Rohitashwa Chakraborty</h1>
+      <p class="tagline">Curious. Adventurous. Geek at Heart.</p>
+      <div class="hero-buttons">
+        <button id="viewResumeBtn" class="btn">View Resume</button>
+      </div>
+      <div class="social-links">
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+        <a href="mailto:youremail@example.com">Email</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section (Content to be added by you) -->
+  <section id="about" class="container section">
+    <h2>About Me</h2>
+    <p><!-- Your story goes here --></p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="container section">
+    <h2>Projects</h2>
+    <div class="grid projects-grid">
+      <div class="card" data-project="project1">
+        <img src="assets/project1-placeholder.jpg" alt="Project 1">
+        <h3>Project Title 1</h3>
+        <p>Short description of the project.</p>
+        <button class="btn details-btn" data-project="project1">More Details</button>
+      </div>
+      <div class="card" data-project="project2">
+        <img src="assets/project2-placeholder.jpg" alt="Project 2">
+        <h3>Project Title 2</h3>
+        <p>Short description of the project.</p>
+        <button class="btn details-btn" data-project="project2">More Details</button>
+      </div>
+      <!-- Add more project cards as needed -->
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="container section">
+    <h2>Experience</h2>
+    <article class="experience-entry">
+      <h3>Role at Company Name</h3>
+      <p>Short, crisp paragraph about your role and impact.</p>
+    </article>
+    <!-- Add additional experiences -->
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="container section">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>JavaScript</li>
+      <li>HTML &amp; CSS</li>
+      <li>React</li>
+      <li>Node.js</li>
+      <!-- Add more skills as needed -->
+    </ul>
+  </section>
+
+  <!-- Blogs / Writing Section -->
+  <section id="blogs" class="container section">
+    <h2>Blogs &amp; Writing</h2>
+    <div class="grid blogs-grid">
+      <div class="card">
+        <h3>Blog Post Title</h3>
+        <p>A short teaser of the blog post.</p>
+        <a href="https://medium.com/@yourprofile/post" target="_blank" class="btn">Read More</a>
+      </div>
+      <!-- Add more blog cards -->
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="container section">
+    <h2>Testimonials</h2>
+    <div class="testimonials">
+      <blockquote>
+        <p>"A short testimonial text about your work."</p>
+        <cite>- Person Name</cite>
+      </blockquote>
+      <!-- Add more testimonials -->
+    </div>
+  </section>
+
+  <!-- Hobbies Section -->
+  <section id="hobbies" class="container section">
+    <h2>Hobbies &amp; Adventures</h2>
+    <div class="grid hobbies-grid">
+      <div class="card">
+        <img src="assets/travel-placeholder.jpg" alt="Travel Photo">
+        <p>Adventure highlight or travel note.</p>
+      </div>
+      <!-- Add more hobby cards -->
+    </div>
+  </section>
+
+  <!-- Live Widgets Section -->
+  <section id="live-widgets" class="container section">
+    <h2>Live Widgets</h2>
+    <div id="liveWidget" class="live-widget">
+      <!-- Live dynamic content will be injected here -->
+    </div>
+  </section>
+
+  <!-- Instagram Feed Section -->
+  <section id="instagram-feed" class="container section">
+    <h2>Instagram Feed</h2>
+    <div id="instagramFeed" class="grid instagram-grid">
+      <!-- Instagram posts will be injected here -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>&copy; 2025 Rohitashwa Chakraborty. All rights reserved.</p>
+  </footer>
+
+  <!-- Modal for Resume & Project Details -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <div class="modal-body">
+        <!-- Dynamic content gets loaded here -->
+      </div>
+    </div>
+  </div>
 </body>
 </html>
